@@ -360,42 +360,109 @@ margin-bottom: 200px;
 .pricing__flex{
     align-items: flex-end;
 }
-.box-pricing{
+.pricing__item{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 220px;
+   /*  width: 220px; */
     /* height: 360px; */
-    border: 2px solid black;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
     cursor: pointer;
-
-
+    flex: 33.33333%;
+    background-color: #333333;
 }
-.block-1{
-    margin: 0 auto;
+.pricing__tarif{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
     padding: 20px 0;
+    border-bottom: 2px solid #ffffff;
+}
+.pricing__amount{
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 94px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    margin: 50px 0 18px;    
+}
+.amount__info{
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 24px;
+    text-align: center;
+    margin: 18px 0;
+}
+.pricing__item:nth-child(2){
+    margin: 0 40px;
 }
 
-.block-3{
-    height: 350px;
+.pricing__title:after{
+    content: "";
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin: 30px auto 0;
+    background-color: #ff8b38;
+    text-align: center;
 }
+.pricing__title{
+    margin-bottom: 30px;
+}
+.pricing__text{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.pricing__content{
+    background-color: #ffffff;
+}
+.pricing__content > p{
+    color: #86878b;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 0;
+}
+
 .pricing__btn{
     max-width: 100%;
-    height: 10px;
+    height: 5px;
     background-color: #ff8b38;
-    /* color: #ff8b38; */
     font-size: 0;
-    /* display: inline-block; */
-    
+    color: #ffffff;
+    font-family: "Open Sans";
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
 }
-
-.box-pricing:hover .pricing__btn{   
-    height: 50px;
-    font-size: 18px;
-
+.pricing__item:nth-child(2) .pricing__btn{
+    height: 40px;
+    background-color: #ff8b38;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
 }
-.box-pricing:hover .block-3{
-    height: 0;
+.pricing__amount > span{
+/* Style for "$19" */
+color: #ffffff;
+font-family: Raleway;
+font-weight: 700;
+line-height: 24px;
+text-align: center;
+font-size: 35px;
   
-    
 }
