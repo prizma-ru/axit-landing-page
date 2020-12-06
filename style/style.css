@@ -43,7 +43,20 @@ h2{
     line-height: 43px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
+
+h2:after{
+    content: "";
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin: 30px auto 0;
+    background-color: #ff8b38;
+    text-align: center;
+}
+
+
 h3{
     color: #333333;
     font-family: "Open Sans";
@@ -129,7 +142,7 @@ h3{
     line-height: 1.2;
 
 }    
-.fab:hover{
+.fab:hover, .fas:hover{
     color: #ff8b38;
 }
 .social__title{
@@ -234,14 +247,14 @@ h3{
 .features-2__text{
     margin-bottom: 46px;
 }
-.features-2__title:after{
+/* .features-2__title:after{
     content: "";
     display: block;
     width: 64px;
     height: 3px;
     margin-top: 30px;
     background-color: #ff8b38;
-}
+} */
 
 .title__sub{
     margin-left: 70px;
@@ -332,7 +345,7 @@ h3{
 }
 
 
-.proces_title:after{
+/* .proces_title:after{
     content: "";
     display: block;
     width: 64px;
@@ -340,7 +353,7 @@ h3{
     margin: 30px auto 0;
     background-color: #ff8b38;
     text-align: center;
-}
+} */
 .items__text,
 .items__title,
 .proces__text{
@@ -354,6 +367,7 @@ h3{
 }
 
 /*-------------------------proces--------------------------*/
+/*-------------------------pricing--------------------------*/
 .pricing{
 margin-bottom: 200px;
 }
@@ -408,7 +422,7 @@ margin-bottom: 200px;
     margin: 0 40px;
 }
 
-.pricing__title:after{
+/* .pricing__title:after{
     content: "";
     display: block;
     width: 64px;
@@ -416,7 +430,7 @@ margin-bottom: 200px;
     margin: 30px auto 0;
     background-color: #ff8b38;
     text-align: center;
-}
+} */
 .pricing__title{
     margin-bottom: 30px;
 }
@@ -464,5 +478,249 @@ font-weight: 700;
 line-height: 24px;
 text-align: center;
 font-size: 35px;
-  
+} 
+
+/*-------------------------pricing--------------------------*/
+/*-------------------------testimonia--------------------------*/
+.testimonia{
+    margin-bottom: 100px;
 }
+.testimonial__flex{
+    display: flex;
+}
+.testimonia__text{
+    text-align: center;
+    margin-bottom: 55px;
+}
+.testimonia__item{
+	flex: 0 1 33.333%;
+	display: flex;
+
+}
+.testimonia__vertical{
+	display: flex;
+    flex-direction: column;
+}
+.item-text{
+    padding-bottom: 41px;
+    flex: 1 1 auto;
+}
+.item-about{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.item-img{
+    margin-right: 15px;
+}
+.name{
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+.position{
+    color: #86878b;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+.testimonia__item:nth-child(2){
+    margin: 0 145px;
+}
+/*-------------------------testimonia--------------------------*/
+/*-------------------------custom--------------------------*/
+.custom{
+    background-image:url("../img/u25_state.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding-top: 73px;
+    padding-bottom: 64px;
+    margin-bottom: 100px;
+}
+.custom::after{
+    content: "";
+    width: 1400px;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.4;
+    z-index: 2;   
+}
+/*     background-color: #000000;
+    opacity: 0.4;  */
+
+.custom__flex{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 3;
+    margin: 0 auto;
+}
+.custom__title > h2{
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.custom__title > h2:after{
+    background-color: #ffffff;
+    margin: 23px auto 0; 
+}
+.custom__text > p{
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 33px;
+}
+.custom__btn{
+    outline: none;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    width: 135px;
+    height: 42px;
+    border: 2px solid #ffffff;
+
+}
+
+.custom__btn{
+    width: 135px;
+    height: 42px;    
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 20px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+.custom__btn:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/*-------------------------custom--------------------------*/
+/*-------------------------contacs--------------------------*/
+.contacs{
+    margin-bottom: 80px;
+}   
+.contacs__forms{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 43px;    
+}
+.contacs__title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.contacts__input{
+    display: flex;
+    flex-direction: column;
+    margin-right: 33px;
+}
+.contacts__input > input{
+    width: 527px;
+    height: 31px;
+    box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+    margin-bottom: 30px;
+    color: #bdbdbd;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    outline-color:#ff8b38;
+    padding-left: 20px;
+
+}
+.contacts__input > input:last-child{
+    margin-bottom: 0;
+}
+    
+.contacs__mesage{
+    flex: 1 1 auto;
+    box-shadow: 0 1px 0 rgba(0, 0, 1, 0.16);
+
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    resize: none; 
+    color: #bdbdbd;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    outline-color:#ff8b38;
+    padding-left: 20px;
+}
+.btn{
+    text-align: center;
+}
+.contacs__btn{
+    width: 148px;
+    height: 46px;   
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #ff8b38;
+    line-height: 20px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+}
+.contacs__btn:hover{
+    opacity: 0.8;
+}
+/*-------------------------contacs--------------------------*/
+
+/*-------------------------footer--------------------------*/
+
+.footer{
+    background-color: #000000;
+}
+.social_nav{
+    padding: 38px 0 15px;
+}
+
+
+
+.footer__copyraite{
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+.footer  .fab, .footer  .fas{
+    color: rgb(204, 204, 204);
+    font-size: 24px;
+    line-height: 1.2;
+
+} 
+.footer  .fab:hover, .footer  .fas:hover{
+    color:  #ff8b38;
+
+} 
+/*-------------------------footer--------------------------*/
